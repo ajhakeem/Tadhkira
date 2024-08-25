@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Tadhkira</string>
+    <string name="prayer_times">Prayer Times</string>
+    <string name="starts_in_template">%1$s starts in </string>
+    <string name="hour_template">%1$s hr </string>
+    <string name="hours_template">%1$s hrs </string>
+    <string name="min_template">%1$s min</string>
+    <string name="mins_template">%1$s mins</string>
+    <string name="at_time_template">at %1$s</string>
+    <string name="display_date_template">%1$s %2$s, %3$s</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+</resources>

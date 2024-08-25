@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/rounded_white_background"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"
+    android:paddingBottom="24dp">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/refresh_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/prayer_times_tv"
+        app:layout_constraintHorizontal_bias="1"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        android:src="@drawable/baseline_refresh_24"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/prayer_times_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/refresh_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"
+        android:text="@string/prayer_times"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v_50_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/fajr_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/prayer_times_tv"
+        app:layout_constraintEnd_toStartOf="@id/v_50_guideline"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Fajr"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/fajr_time_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/v_50_guideline"
+        app:layout_constraintTop_toBottomOf="@id/prayer_times_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        tools:text="5:55 AM"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/dhuhr_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fajr_tv"
+        app:layout_constraintEnd_toStartOf="@id/v_50_guideline"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Dhuhr"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/dhuhr_time_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/v_50_guideline"
+        app:layout_constraintTop_toBottomOf="@id/fajr_time_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        tools:text="1:15 PM"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/asr_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dhuhr_tv"
+        app:layout_constraintEnd_toStartOf="@id/v_50_guideline"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Asr"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/asr_time_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/v_50_guideline"
+        app:layout_constraintTop_toBottomOf="@id/dhuhr_time_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        tools:text="4:45 PM"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/maghrib_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/asr_tv"
+        app:layout_constraintEnd_toStartOf="@id/v_50_guideline"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Maghrib"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/maghrib_time_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/v_50_guideline"
+        app:layout_constraintTop_toBottomOf="@id/asr_time_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        tools:text="7:29 PM"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/isha_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/maghrib_tv"
+        app:layout_constraintEnd_toStartOf="@id/v_50_guideline"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Isha"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/isha_time_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/v_50_guideline"
+        app:layout_constraintTop_toBottomOf="@id/maghrib_time_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        tools:text="8:40 PM"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
